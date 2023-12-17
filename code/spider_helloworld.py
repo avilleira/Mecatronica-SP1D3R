@@ -35,7 +35,7 @@ class SpiderLeg:
         self.femur.start(angle_to_percent(150))
         self.tibia.start(angle_to_percent(160))
 
-    # To greet method
+    # To greet method. The tibia is the only part need to be moved
     def greet(self):
         for times in range(2):
             # Wave down
