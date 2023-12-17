@@ -20,7 +20,7 @@ def angle_to_percent (angle) :
 
 def main():
     print("INIT FUNCTION")
-    GPIO.setmode(GPIO.BOARD) #Use Board numerotation mode
+    GPIO.setmode(GPIO.BOARD) #Use Board numeration mode
     
     #Use pin 12 for PWM signal
     pwm_gpio = 40
