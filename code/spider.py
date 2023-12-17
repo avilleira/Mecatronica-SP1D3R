@@ -29,12 +29,12 @@ def main():
     pwm = GPIO.PWM(pwm_gpio, frequence)
     
     #Init at 0°
-    pwm.start(angle_to_percent(0))
+    pwm.start(angle_to_percent(int(sys.argv[1])))
     time.sleep(1)
     
     #Go at 90°
-    pwm.ChangeDutyCycle(angle_to_percent(90))
-    time.sleep(1)
+    #pwm.ChangeDutyCycle(angle_to_percent(90))
+    #time.sleep(1)
     
     #Finish at 180°
 
