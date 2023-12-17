@@ -1,5 +1,5 @@
 import RPi.GPIO as GPIO
-import pigpio, sys
+import sys
 import time
 
 
@@ -29,7 +29,7 @@ def main():
     pwm = GPIO.PWM(pwm_gpio, frequence)
     
     #Init at 0°
-    pwm.start(angle_to_percent(int(sys.argv[1])))
+    pwm.start(angle_to_percent(int(sys.argv[1]))) 
     time.sleep(1)
     
     #Go at 90°
